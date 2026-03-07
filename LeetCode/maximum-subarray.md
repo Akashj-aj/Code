@@ -63,3 +63,5 @@ if (cur_sum<0){
 Simple reason:
 - If your running sum is negative, carrying it forward will reduce the next total.
 - Better to drop that negative baggage and start new from the next index.
+
+Note: Kadane says drop negative baggage and move on.

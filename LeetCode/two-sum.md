@@ -54,3 +54,5 @@ m[nums[i]]=i;
 - `m.find(key) != m.end()` means: the required partner number is already in the map.
 - So `return {m[key], i};` returns both indices of numbers that make the target.
 - If not found, `m[nums[i]] = i;` stores current number for future elements.
+
+Note: Two numbers, one target, zero excuses for nested loops in interviews.

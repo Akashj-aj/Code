@@ -1,4 +1,4 @@
-# C++ - unordered_map
+﻿# C++ - unordered_map
 
 `unordered_map` is a container in C++  that stores key-value pairs.
 
@@ -360,3 +360,5 @@ mp.clear();        // remove all
 - Delete: `O(1)` average
 - Traversal: `O(n)`
 - Worst case operations: `O(n)`
+
+Note: unordered_map is fast on average and dramatic on bad days.

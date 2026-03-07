@@ -39,3 +39,4 @@ public:
     }
 };
 ```
+Note: If the set size shrinks, your array had trust issues.

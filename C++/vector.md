@@ -1,4 +1,4 @@
-# C++ - Vector
+﻿# C++ - Vector
 
 `vector` is a dynamic array container in C++ that can automatically resize when elements are inserted or removed.
 
@@ -305,3 +305,5 @@ v.clear();        // remove all elements
 - Push at end: `O(1)` amortized
 - Insert/Delete in middle: `O(n)`
 - Traversal: `O(n)`
+
+Note: Vector looks simple until capacity decides to do surprise cardio.
