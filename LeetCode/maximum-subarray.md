@@ -1,4 +1,4 @@
-# Maximum Subarray
+﻿# Maximum Subarray
 
 Problem Link: https://leetcode.com/problems/maximum-subarray/
 
@@ -24,7 +24,7 @@ class Solution:
 ```
 
 Note:
-- I first wrote cur_sum < max_sum, like smaller sum should be the max, and honestly I don’t know why I did that. Then I fixed it: cur_sum > max_sum
+- I first wrote cur_sum < max_sum, like smaller sum should be the max, and honestly I donâ€™t know why I did that. Then I fixed it: cur_sum > max_sum
 
 ## C++
 
@@ -66,4 +66,4 @@ Simple reason:
 - If your running sum is negative, carrying it forward will reduce the next total.
 - Better to drop that negative baggage and start new from the next index.
 
-Note: Kadane says drop negative baggage and move on.
+Note: Negative running sum helps no one; reset it and move on.

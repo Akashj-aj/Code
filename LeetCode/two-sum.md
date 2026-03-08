@@ -1,4 +1,4 @@
-# Two Sum
+﻿# Two Sum
 
 Problem Link: https://leetcode.com/problems/two-sum/
 
@@ -57,4 +57,4 @@ m[nums[i]]=i;
 - So `return {m[key], i};` returns both indices of numbers that make the target.
 - If not found, `m[nums[i]] = i;` stores current number for future elements.
 
-Note: Two numbers, one target, zero excuses for nested loops in interviews.
+Note: I checked every pair first; hash map politely asked me to stop wasting time.

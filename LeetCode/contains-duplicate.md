@@ -1,4 +1,4 @@
-# Contains Duplicate
+﻿# Contains Duplicate
 
 Problem Link: https://leetcode.com/problems/contains-duplicate/
 
