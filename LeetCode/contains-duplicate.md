@@ -1,5 +1,7 @@
 # Contains Duplicate
 
+Problem Link: https://leetcode.com/problems/contains-duplicate/
+
 ## Python (Hash Map)
 
 Approach: Track seen numbers in a dictionary. If a number repeats, return `True`.

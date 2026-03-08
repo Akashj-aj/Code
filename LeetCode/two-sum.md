@@ -1,5 +1,7 @@
 # Two Sum
 
+Problem Link: https://leetcode.com/problems/two-sum/
+
 ## Python
 
 Approach: Brute force using two nested loops to check every pair.
