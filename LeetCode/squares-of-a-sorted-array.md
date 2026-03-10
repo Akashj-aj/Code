@@ -102,4 +102,3 @@ Then I understood that sorting makes the time complexity higher.
 After looking at others' solutions, I got the two-pointer idea because I was not in the mood to think more.
 
 Note: My solution was working peacefully until time complexity entered the chat.
-
