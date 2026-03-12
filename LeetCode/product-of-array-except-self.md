@@ -28,6 +28,36 @@ class Solution:
         return output
 ```
 
+## Python (prefix and suffix arrays)
+
+Approach:
+- Build a `prefix` array where each position stores product of all elements before it.
+- Build a `suffix` array where each position stores product of all elements after it.
+- Multiply `prefix[i]` and `suffix[i]` to get the answer for index `i`.
+
+```python
+class Solution:
+    def productExceptSelf(self, nums):
+        n = len(nums)
+
+        prefix = [0] * n
+        suffix = [0] * n
+        ans = [0] * n
+
+        prefix[0] = 1
+        for i in range(1, n):
+            prefix[i] = prefix[i-1] * nums[i-1]
+
+        suffix[n-1] = 1
+        for i in range(n-2, -1, -1):
+            suffix[i] = suffix[i+1] * nums[i+1]
+
+        for i in range(n):
+            ans[i] = prefix[i] * suffix[i]
+
+        return ans
+```
+
 ## C++
 
 Approach:
@@ -55,6 +85,43 @@ public:
         }
 
         return output;        
+    }
+};
+```
+
+## C++ (prefix and suffix arrays)
+
+Approach:
+- Build a `prefix` array where each position stores product of elements before it.
+- Build a `suffix` array where each position stores product of elements after it.
+- Multiply `prefix[i]` and `suffix[i]` to get the final answer for each index.
+
+```cpp
+class Solution {
+public:
+    vector<int> productExceptSelf(vector<int>& nums) {
+
+        int n = nums.size();
+
+        vector<int> prefix(n);
+        vector<int> suffix(n);
+        vector<int> ans(n);
+
+        prefix[0] = 1;
+        for(int i = 1; i < n; i++){
+            prefix[i] = prefix[i-1] * nums[i-1];
+        }
+
+        suffix[n-1] = 1;
+        for(int i = n-2; i >= 0; i--){
+            suffix[i] = suffix[i+1] * nums[i+1];
+        }
+
+        for(int i = 0; i < n; i++){
+            ans[i] = prefix[i] * suffix[i];
+        }
+
+        return ans;
     }
 };
 ```
